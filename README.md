@@ -1,65 +1,73 @@
 # ☕ Maven Project
 
-A simple Java project built using **Apache Maven** to demonstrate the fundamentals of Maven project structure, dependency management, plugins, and build lifecycle.
+A simple Java application developed using **Apache Maven** to demonstrate Maven project creation, dependency management, build automation, and unit testing. This project was created as part of a DevOps laboratory exercise.
 
 ---
 
-## 📌 Overview
+## 📖 About the Project
 
-This project was created as part of a DevOps laboratory exercise to understand:
+This project showcases the basics of Maven and how it simplifies Java project development through dependency management and build automation. It includes a sample Java application, unit tests, and the standard Maven project structure.
 
-- Maven project creation
-- Project Object Model (POM)
-- Dependency Management
-- Maven Plugins
-- Build Lifecycle
-- Unit Testing using JUnit
+---
+
+## 🚀 Features
+
+- Maven Project Structure
+- Java Application
+- Dependency Management using `pom.xml`
+- Maven Build Lifecycle
+- Unit Testing with JUnit
+- Build Automation
+- Easy Project Packaging
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Java
+- Java 21
 - Apache Maven
-- JUnit
-- IntelliJ IDEA / Eclipse
-- Git & GitHub
+- Maven Wrapper (mvnw)
+- JUnit 5
+- Command Prompt (CMD)
+- Git
+- GitHub
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
+```text
 maven-project/
 │
+├── .mvn/
+├── .gradle/
+├── gradle/
 ├── src/
 │   ├── main/
-│   │   └── java/
 │   └── test/
-│       └── java/
-│
-├── pom.xml
-├── README.md
-├── .mvn/
 ├── target/
-└── gradlew / gradlew.bat
+├── pom.xml
+├── build.gradle
+├── settings.gradle
+├── gradlew
+├── gradlew.bat
+└── README.md
 ```
 
 ---
 
-## ⚙️ Maven Build Lifecycle
+## ⚙️ Prerequisites
 
-This project uses Maven's default lifecycle:
+Before running the project, make sure you have:
 
-- ✔ Validate
-- ✔ Compile
-- ✔ Test
-- ✔ Package
-- ✔ Install
+- Java 21 or later
+- Apache Maven
+- Git
+- GitHub account
 
 ---
 
-## ▶️ How to Run
+## ▶️ Getting Started
 
 ### Clone the Repository
 
@@ -67,84 +75,77 @@ This project uses Maven's default lifecycle:
 git clone https://github.com/isra-is/maven-project.git
 ```
 
-### Navigate to Project
+### Navigate to the Project
 
 ```bash
 cd maven-project
 ```
 
-### Compile
+### Compile the Project
 
 ```bash
 mvn compile
 ```
 
-### Run Tests
+### Run Unit Tests
 
 ```bash
 mvn test
 ```
 
-### Package Project
+### Package the Application
 
 ```bash
 mvn package
 ```
 
-### Install
+### Install to Local Repository
 
 ```bash
 mvn install
 ```
 
----
+### Clean Build Files
 
-## 📦 Maven Commands
-
-| Command | Description |
-|----------|-------------|
-| `mvn compile` | Compiles source code |
-| `mvn test` | Runs unit tests |
-| `mvn package` | Creates JAR file |
-| `mvn install` | Installs JAR into local repository |
-| `mvn clean` | Removes build files |
+```bash
+mvn clean
+```
 
 ---
 
-## 📄 pom.xml
+## 📦 Maven Build Lifecycle
 
-The `pom.xml` file manages:
-
-- Project Information
-- Dependencies
-- Plugins
-- Build Configuration
-- Version Management
-
----
-
-## ✅ Features
-
-- Maven Project Structure
-- Dependency Management
-- Plugin Configuration
-- Build Automation
-- Unit Testing
-- Easy Project Packaging
+| Phase | Description |
+|--------|-------------|
+| Validate | Validates the project |
+| Compile | Compiles source code |
+| Test | Executes unit tests |
+| Package | Creates a JAR file |
+| Install | Installs the package locally |
+| Clean | Removes previous build files |
 
 ---
 
-## 📚 Learning Outcomes
+## 📄 Project Files
 
-After completing this project, I learned:
+- **pom.xml** – Project configuration and dependency management
+- **src/main/** – Application source code
+- **src/test/** – Unit test files
+- **target/** – Generated build output
 
-- How Maven manages Java projects
-- Maven directory structure
-- Working with `pom.xml`
-- Managing dependencies
-- Using Maven plugins
-- Running build lifecycle commands
-- Writing and executing unit tests
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned:
+
+- Creating a Maven project
+- Understanding the Maven directory structure
+- Managing dependencies using `pom.xml`
+- Working with Maven plugins
+- Executing Maven lifecycle commands
+- Writing and running JUnit tests
+- Packaging Java applications
 
 ---
 
@@ -156,4 +157,6 @@ After completing this project, I learned:
 
 ---
 
-## ⭐ If you found this repository useful, consider giving it a star!
+## 📜 License
+
+This project is created for educational and learning purposes.
