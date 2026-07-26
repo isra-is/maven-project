@@ -1,74 +1,60 @@
 # ☕ Maven Project
 
-> A Java application built using **Apache Maven** to demonstrate build automation, dependency management, project configuration, unit testing, and DevOps integration.
-
-![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
-![Maven](https://img.shields.io/badge/Apache-Maven-C71A36?style=for-the-badge&logo=apachemaven)
-![JUnit](https://img.shields.io/badge/JUnit-5-25A162?style=for-the-badge&logo=junit5)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)
+A Java project developed using **Apache Maven** as part of the **6th Semester DevOps Laboratory**. This repository contains the implementation of the Maven laboratory exercise, demonstrating project creation, dependency management, build automation, unit testing, and packaging.
 
 ---
 
-# 📖 About the Project
+## 📖 Overview
 
-This project was developed to learn the fundamentals of **Apache Maven**, a powerful build automation and dependency management tool for Java applications.
+Apache Maven is a build automation and dependency management tool used for Java applications. This project demonstrates the practical implementation of Maven concepts through a simple Java application and follows the standard Maven project structure.
 
-The project demonstrates how Maven simplifies Java development by managing dependencies, automating builds, executing unit tests, and packaging applications into deployable artifacts.
-
-It also serves as the **foundation for future DevOps practices**, including Gradle, Jenkins, Ansible, CI/CD Pipelines, and Azure DevOps.
+The repository serves as a record of the practical work completed during the DevOps Laboratory.
 
 ---
 
-# 🎯 Objectives
+## 🎯 Laboratory Details
 
-- Create a Maven Project
-- Understand Maven Directory Structure
-- Configure `pom.xml`
-- Manage Project Dependencies
-- Configure Maven Plugins
-- Execute Maven Build Lifecycle
-- Perform Unit Testing
-- Package Java Applications
-- Prepare the project for DevOps workflows
+| Item | Details |
+|------|---------|
+| Course | DevOps Laboratory |
+| Semester | 6th Semester |
+| Experiment | Working with Maven |
+| Topics Covered | Maven Project Creation, POM File, Dependency Management, Plugins, Build Lifecycle |
 
 ---
 
-# ✨ Features
+## ✨ Objectives
 
-- Standard Maven Project Structure
-- Java Application Development
-- Dependency Management
-- Build Automation
-- Plugin Configuration
-- JUnit Testing
-- JAR Packaging
-- Easy Project Maintenance
-- Git & GitHub Integration
-
----
-
-# 🛠 Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| Java 21 | Programming Language |
-| Apache Maven | Build Automation Tool |
-| Maven Wrapper | Portable Maven Execution |
-| JUnit 5 | Unit Testing |
-| Git | Version Control |
-| GitHub | Source Code Hosting |
-| Command Prompt (CMD) | Running Maven Commands |
+- Create a Maven project
+- Understand the Maven directory structure
+- Configure the `pom.xml` file
+- Manage project dependencies
+- Configure Maven plugins
+- Execute the Maven Build Lifecycle
+- Perform unit testing
+- Package the application into a JAR file
+- Understand Maven's role in DevOps workflows
 
 ---
 
-# 📂 Project Structure
+## 🛠 Technologies Used
+
+- Java 21
+- Apache Maven
+- Maven Wrapper
+- JUnit 5
+- Git
+- GitHub
+- Command Prompt (CMD)
+
+---
+
+## 📂 Project Structure
 
 ```text
 maven-project/
 │
 ├── .mvn/
-├── gradle/
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -76,51 +62,27 @@ maven-project/
 │       └── java/
 ├── target/
 ├── pom.xml
-├── build.gradle
-├── settings.gradle
-├── gradlew
-├── gradlew.bat
+├── mvnw
+├── mvnw.cmd
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-# ⚙ Software Requirements
+## ⚙️ Software Requirements
 
-Before running the project, install:
+Before running this project, install:
 
 - Java Development Kit (JDK 21)
 - Apache Maven
 - Git
-- GitHub Account
-- Java IDE (IntelliJ IDEA / Eclipse / VS Code)
 
----
-
-# 🚀 Installation Guide
-
-## Step 1 — Install Java
-
-Download and install **Java Development Kit (JDK 21)**.
-
-Verify installation:
+Verify the installations:
 
 ```bash
 java -version
 ```
-
----
-
-## Step 2 — Install Apache Maven
-
-Download Apache Maven and configure:
-
-- `JAVA_HOME`
-- `MAVEN_HOME`
-- Add Maven's **bin** folder to the System PATH
-
-Verify installation:
 
 ```bash
 mvn -version
@@ -128,49 +90,49 @@ mvn -version
 
 ---
 
-## Step 3 — Clone Repository
+## 🚀 Getting Started
+
+### Clone the Repository
 
 ```bash
-git clone https://github.com/isra-is/maven-project.git
+git clone https://github.com/isra-is/<repository-name>.git
+```
+
+### Navigate to the Project Directory
+
+```bash
+cd <repository-name>
 ```
 
 ---
 
-## Step 4 — Navigate into Project
+## ▶️ Maven Commands
 
-```bash
-cd maven-project
-```
-
----
-
-# ▶ Running the Project
-
-### Compile
+### Compile the Project
 
 ```bash
 mvn compile
 ```
 
-### Run Tests
+### Run Unit Tests
 
 ```bash
 mvn test
 ```
 
-### Package
+### Package the Project
 
 ```bash
 mvn package
 ```
 
-### Install
+### Install to Local Repository
 
 ```bash
 mvn install
 ```
 
-### Clean
+### Clean Generated Files
 
 ```bash
 mvn clean
@@ -178,115 +140,78 @@ mvn clean
 
 ---
 
-# 📦 Maven Build Lifecycle
+## 📦 Maven Build Lifecycle
 
 | Phase | Description |
 |--------|-------------|
-| validate | Validates project structure |
-| compile | Compiles Java source code |
-| test | Executes unit tests |
-| package | Creates a JAR file |
-| install | Installs package into local repository |
-| deploy | Deploys package to remote repository |
+| Validate | Validates the project configuration |
+| Compile | Compiles the source code |
+| Test | Executes unit tests |
+| Package | Creates a JAR file |
+| Install | Installs the package into the local Maven repository |
+| Deploy | Deploys the package to a remote repository |
 
 ---
 
-# 📄 Understanding pom.xml
+## 📄 Project Configuration
 
-The **Project Object Model (POM)** is the heart of every Maven project.
+The project configuration is managed through the **pom.xml** file.
 
-It contains:
+The POM file contains:
 
 - Project Information
 - Dependencies
 - Plugins
 - Build Configuration
-- Version Details
-- Packaging Information
+- Version Information
+- Packaging Details
 
 ---
 
-# 📚 Learning Outcomes
+## 📚 Learning Outcomes
 
-After completing this project, I learned:
+This laboratory exercise provided practical experience in:
 
-- Java Project Development using Maven
-- Installing and Configuring Java
-- Installing and Configuring Maven
-- Maven Directory Structure
+- Creating Maven projects
+- Understanding Maven project structure
 - Working with `pom.xml`
-- Managing Dependencies
-- Configuring Plugins
-- Running Maven Lifecycle Commands
-- Writing Unit Tests
-- Packaging Java Applications
-- Uploading Projects to GitHub
+- Managing project dependencies
+- Configuring Maven plugins
+- Running Maven lifecycle commands
+- Building and packaging Java applications
+- Writing and executing unit tests
+- Using Git and GitHub for version control
 
 ---
 
-# 🚀 Future Scope
+## 🔄 Related DevOps Concepts
 
-This project acts as the starting point for advanced DevOps concepts.
+The Maven project provides a foundation for learning additional DevOps tools and practices, including:
 
-It can be integrated with:
-
-- ✅ Gradle Build Tool
-- ✅ Jenkins Automation Server
-- ✅ Continuous Integration (CI)
-- ✅ Continuous Deployment (CD)
-- ✅ Ansible Configuration Management
-- ✅ Azure DevOps Pipelines
-- ✅ Azure App Services
-- ✅ GitHub Actions
+- Gradle
+- Jenkins
+- Continuous Integration (CI)
+- Continuous Deployment (CD)
+- Ansible
+- Azure DevOps Pipelines
+- Build Automation
 
 ---
 
-# 🔄 DevOps Workflow
+## 📸 Screenshots
 
-```text
-Java Source Code
-        │
-        ▼
-Apache Maven
-        │
-        ▼
-Compile & Test
-        │
-        ▼
-Generate JAR
-        │
-        ▼
-GitHub Repository
-        │
-        ▼
-Jenkins CI Pipeline
-        │
-        ▼
-Ansible Deployment
-        │
-        ▼
-Azure DevOps Pipeline
-        │
-        ▼
-Application Deployment
-```
+You can include screenshots such as:
 
----
-
-# 📸 Output
-
-Add screenshots here:
-
-- Java Program Output
-- Maven Build Output
-- JUnit Test Result
-- Generated JAR File
 - Project Structure
+- Maven Compile Output
+- Test Execution
+- Package Generation
+- Terminal Output
 - GitHub Repository
 
 Example:
 
-```
+```text
 images/
 ├── project-structure.png
 ├── compile-output.png
@@ -297,33 +222,264 @@ images/
 
 ---
 
-# 🤝 Contributing
+## 📌 Repository Purpose
 
-Contributions, improvements, and suggestions are always welcome.
+This repository is maintained to document the practical implementation of the Maven laboratory exercise completed as part of the **6th Semester DevOps Laboratory**.
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to GitHub
-5. Open a Pull Request
+It serves as a reference for learning Maven fundamentals, Java project management, and build automation using Apache Maven.
 
 ---
 
-# 👩‍💻 Author
+## 📚 Acknowledgement
 
-**Isra Zainab**
+This repository contains the implementation of a laboratory exercise completed as part of the **DevOps Laboratory (6th Semester)**.
 
-**B.E. Computer Science & Engineering**  
-*(IoT, Cybersecurity & Blockchain Technology)*
-
-🔗 GitHub: https://github.com/isra-is
+The experiment objectives and concepts are based on the laboratory curriculum provided by the institution. This repository contains the practical implementation performed for academic and learning purposes.
 
 ---
 
-# 📜 License
+## 📜 License
 
-This project is created for educational and learning purposes.
+This repository is intended for **educational and academic purposes only**.# ☕ Maven Project
+
+A Java project developed using **Apache Maven** as part of the **6th Semester DevOps Laboratory**. This repository contains the implementation of the Maven laboratory exercise, demonstrating project creation, dependency management, build automation, unit testing, and packaging.
 
 ---
 
-⭐ If you found this repository useful, consider giving it a Star!
+## 📖 Overview
+
+Apache Maven is a build automation and dependency management tool used for Java applications. This project demonstrates the practical implementation of Maven concepts through a simple Java application and follows the standard Maven project structure.
+
+The repository serves as a record of the practical work completed during the DevOps Laboratory.
+
+---
+
+## 🎯 Laboratory Details
+
+| Item | Details |
+|------|---------|
+| Course | DevOps Laboratory |
+| Semester | 6th Semester |
+| Experiment | Working with Maven |
+| Topics Covered | Maven Project Creation, POM File, Dependency Management, Plugins, Build Lifecycle |
+
+---
+
+## ✨ Objectives
+
+- Create a Maven project
+- Understand the Maven directory structure
+- Configure the `pom.xml` file
+- Manage project dependencies
+- Configure Maven plugins
+- Execute the Maven Build Lifecycle
+- Perform unit testing
+- Package the application into a JAR file
+- Understand Maven's role in DevOps workflows
+
+---
+
+## 🛠 Technologies Used
+
+- Java 21
+- Apache Maven
+- Maven Wrapper
+- JUnit 5
+- Git
+- GitHub
+- Command Prompt (CMD)
+
+---
+
+## 📂 Project Structure
+
+```text
+maven-project/
+│
+├── .mvn/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   └── test/
+│       └── java/
+├── target/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Software Requirements
+
+Before running this project, install:
+
+- Java Development Kit (JDK 21)
+- Apache Maven
+- Git
+
+Verify the installations:
+
+```bash
+java -version
+```
+
+```bash
+mvn -version
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/isra-is/<repository-name>.git
+```
+
+### Navigate to the Project Directory
+
+```bash
+cd <repository-name>
+```
+
+---
+
+## ▶️ Maven Commands
+
+### Compile the Project
+
+```bash
+mvn compile
+```
+
+### Run Unit Tests
+
+```bash
+mvn test
+```
+
+### Package the Project
+
+```bash
+mvn package
+```
+
+### Install to Local Repository
+
+```bash
+mvn install
+```
+
+### Clean Generated Files
+
+```bash
+mvn clean
+```
+
+---
+
+## 📦 Maven Build Lifecycle
+
+| Phase | Description |
+|--------|-------------|
+| Validate | Validates the project configuration |
+| Compile | Compiles the source code |
+| Test | Executes unit tests |
+| Package | Creates a JAR file |
+| Install | Installs the package into the local Maven repository |
+| Deploy | Deploys the package to a remote repository |
+
+---
+
+## 📄 Project Configuration
+
+The project configuration is managed through the **pom.xml** file.
+
+The POM file contains:
+
+- Project Information
+- Dependencies
+- Plugins
+- Build Configuration
+- Version Information
+- Packaging Details
+
+---
+
+## 📚 Learning Outcomes
+
+This laboratory exercise provided practical experience in:
+
+- Creating Maven projects
+- Understanding Maven project structure
+- Working with `pom.xml`
+- Managing project dependencies
+- Configuring Maven plugins
+- Running Maven lifecycle commands
+- Building and packaging Java applications
+- Writing and executing unit tests
+- Using Git and GitHub for version control
+
+---
+
+## 🔄 Related DevOps Concepts
+
+The Maven project provides a foundation for learning additional DevOps tools and practices, including:
+
+- Gradle
+- Jenkins
+- Continuous Integration (CI)
+- Continuous Deployment (CD)
+- Ansible
+- Azure DevOps Pipelines
+- Build Automation
+
+---
+
+## 📸 Screenshots
+
+You can include screenshots such as:
+
+- Project Structure
+- Maven Compile Output
+- Test Execution
+- Package Generation
+- Terminal Output
+- GitHub Repository
+
+Example:
+
+```text
+images/
+├── project-structure.png
+├── compile-output.png
+├── test-output.png
+├── package-output.png
+└── github-repository.png
+```
+
+---
+
+## 📌 Repository Purpose
+
+This repository is maintained to document the practical implementation of the Maven laboratory exercise completed as part of the **6th Semester DevOps Laboratory**.
+
+It serves as a reference for learning Maven fundamentals, Java project management, and build automation using Apache Maven.
+
+---
+
+## 📚 Acknowledgement
+
+This repository contains the implementation of a laboratory exercise completed as part of the **DevOps Laboratory (6th Semester)**.
+
+The experiment objectives and concepts are based on the laboratory curriculum provided by the institution. This repository contains the practical implementation performed for academic and learning purposes.
+
+---
+
+## 📜 License
+
+This repository is intended for **educational and academic purposes only**.
