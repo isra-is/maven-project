@@ -495,3 +495,220 @@ Through this laboratory exercise, the following concepts were explored:
 - Unit Testing
 - Packaging Java Applications
 - Repository Management
+
+# 🚀 Building and Running the Project
+
+Once Java and Maven are installed successfully, the project can be built and executed using Maven commands.
+
+### Compile the Project
+
+```bash
+mvn compile
+```
+
+Compiles all source files located in the `src/main/java` directory.
+
+---
+
+### Execute Unit Tests
+
+```bash
+mvn test
+```
+
+Runs all test cases present in the `src/test/java` directory.
+
+---
+
+### Package the Project
+
+```bash
+mvn package
+```
+
+Compiles the project, runs tests, and generates a JAR file inside the `target` directory.
+
+---
+
+### Install the Project
+
+```bash
+mvn install
+```
+
+Builds the project and installs the generated artifact into the local Maven repository for reuse in other Maven projects.
+
+---
+
+### Clean the Project
+
+```bash
+mvn clean
+```
+
+Removes all previously generated build files from the `target` directory.
+
+---
+
+# 📂 Build Output
+
+After a successful build, Maven generates the following output:
+
+```text
+target/
+│
+├── classes/
+├── generated-sources/
+├── generated-test-sources/
+├── maven-status/
+├── surefire-reports/
+├── test-classes/
+└── *.jar
+```
+
+The generated JAR file can be found inside the **target/** directory.
+
+---
+
+# 🌐 Version Control with Git
+
+Git is used to track project changes and maintain version history.
+
+### Initialize Git
+
+```bash
+git init
+```
+
+### Check Repository Status
+
+```bash
+git status
+```
+
+### Add Files
+
+```bash
+git add .
+```
+
+### Commit Changes
+
+```bash
+git commit -m "Initial Maven project"
+```
+
+---
+
+# ☁️ Uploading to GitHub
+
+Create a repository on GitHub and connect it with the local project.
+
+```bash
+git remote add origin https://github.com/your-username/your-repository.git
+```
+
+Push the project:
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+Once uploaded, the repository can be accessed and managed through GitHub.
+
+---
+
+# 📸 Screenshots
+
+You may include screenshots such as:
+
+- Project Folder Structure
+- `pom.xml`
+- Java Program Output
+- `mvn compile`
+- `mvn test`
+- `mvn package`
+- Generated JAR File
+- GitHub Repository
+
+Example:
+
+```text
+images/
+│
+├── project-structure.png
+├── pom-file.png
+├── compile-output.png
+├── test-output.png
+├── package-output.png
+├── generated-jar.png
+└── github-repository.png
+```
+
+---
+
+# 🎓 Learning Outcomes
+
+After completing this laboratory exercise, the following concepts were understood:
+
+- Apache Maven fundamentals
+- Java project management
+- Maven directory structure
+- Project Object Model (POM)
+- Dependency management
+- Maven plugins
+- Maven build lifecycle
+- Unit testing with JUnit
+- Build automation
+- Packaging Java applications
+- Git version control
+- GitHub repository management
+
+---
+
+# 🔄 Related DevOps Concepts
+
+The concepts learned in this experiment provide a foundation for advanced DevOps tools and practices, including:
+
+- Gradle
+- Jenkins
+- Continuous Integration (CI)
+- Continuous Deployment (CD)
+- Ansible
+- Azure DevOps
+- GitHub Actions
+- Build and Release Pipelines
+
+---
+
+# 📖 References
+
+- Apache Maven Documentation
+- Oracle Java Documentation
+- Git Documentation
+- GitHub Documentation
+
+---
+
+# 📌 Repository Purpose
+
+This repository is maintained as a record of the practical implementation completed during the **6th Semester DevOps Laboratory**.
+
+It demonstrates the application of Apache Maven concepts for educational purposes and serves as a reference for learning Java project management and build automation.
+
+---
+
+# 📚 Acknowledgement
+
+This repository contains the practical implementation of a laboratory exercise completed as part of the **6th Semester DevOps Laboratory**.
+
+The experiment objectives and concepts are based on the laboratory curriculum provided by the institution. This repository is intended solely for educational and learning purposes.
+
+---
+
+# 📜 License
+
+This repository is intended for **educational and academic purposes only**.
+
+The implementation and documentation in this repository are shared to support learning and practice.
