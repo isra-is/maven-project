@@ -85,3 +85,219 @@ The primary objectives of this laboratory exercise are:
 - Generate executable JAR files
 - Understand Maven's role in DevOps
 - Maintain source code using Git and GitHub
+
+# 🛠 Technologies Used
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Java | 21 | Programming Language |
+| Apache Maven | Latest Stable Release | Build Automation & Dependency Management |
+| Maven Wrapper | Included | Project-specific Maven Execution |
+| JUnit | 5 | Unit Testing Framework |
+| Git | Latest | Version Control |
+| GitHub | - | Repository Hosting |
+| Command Prompt (CMD) | Windows | Running Maven Commands |
+
+---
+
+# 💻 Software Requirements
+
+Before running this project, ensure the following software is installed:
+
+- Java Development Kit (JDK 21)
+- Apache Maven
+- Git
+- Internet connection (for downloading Maven dependencies)
+- A Java IDE (Optional)
+  - IntelliJ IDEA
+  - Eclipse IDE
+  - Visual Studio Code
+
+---
+
+# ☕ Java Installation
+
+## Step 1: Download Java
+
+Download the latest **Java Development Kit (JDK 21)** from the official Oracle website or any compatible OpenJDK distribution.
+
+---
+
+## Step 2: Install Java
+
+Run the installer and complete the installation by following the setup instructions.
+
+---
+
+## Step 3: Configure JAVA_HOME
+
+Set the `JAVA_HOME` environment variable to the JDK installation directory.
+
+Example:
+
+```text
+C:\Program Files\Java\jdk-21
+```
+
+Add the following to the system **Path**:
+
+```text
+%JAVA_HOME%\bin
+```
+
+---
+
+## Step 4: Verify Installation
+
+Open Command Prompt and execute:
+
+```bash
+java -version
+```
+
+Expected Output:
+
+```text
+java version "21"
+```
+
+---
+
+# 📦 Apache Maven Installation
+
+## Step 1: Download Maven
+
+Download the latest stable version of **Apache Maven** from the official Apache Maven website.
+
+---
+
+## Step 2: Extract Maven
+
+Extract the downloaded archive to a preferred location.
+
+Example:
+
+```text
+C:\Program Files\Apache\Maven
+```
+
+---
+
+## Step 3: Configure Environment Variables
+
+Create a new environment variable:
+
+```text
+MAVEN_HOME
+```
+
+Set its value to the Maven installation directory.
+
+Example:
+
+```text
+C:\Program Files\Apache\Maven
+```
+
+---
+
+## Step 4: Update System PATH
+
+Add the following to the system Path:
+
+```text
+%MAVEN_HOME%\bin
+```
+
+---
+
+## Step 5: Verify Maven Installation
+
+Open Command Prompt and run:
+
+```bash
+mvn -version
+```
+
+Example Output:
+
+```text
+Apache Maven 3.x.x
+Java version: 21
+```
+
+---
+
+# 📁 Creating a Maven Project
+
+A Maven project can be created using the Maven Archetype command.
+
+Example:
+
+```bash
+mvn archetype:generate
+```
+
+After creation, Maven automatically generates the standard project structure containing:
+
+- Source Code
+- Test Code
+- `pom.xml`
+- Build Configuration
+
+---
+
+# 📂 Standard Maven Directory Structure
+
+```text
+project-name/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   └── resources/
+│   │
+│   └── test/
+│       ├── java/
+│       └── resources/
+│
+├── target/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
+```
+
+---
+
+# 📌 Why Maven?
+
+Apache Maven helps developers by:
+
+- Managing project dependencies automatically
+- Standardizing project structure
+- Automating project builds
+- Running unit tests
+- Packaging applications
+- Simplifying project maintenance
+- Supporting Continuous Integration (CI) workflows
+
+---
+
+# ✅ Verify Everything is Ready
+
+Run the following commands to verify the setup:
+
+```bash
+java -version
+```
+
+```bash
+mvn -version
+```
+
+```bash
+git --version
+```
+
+If all commands execute successfully, the development environment is ready for building and running Maven projects.
