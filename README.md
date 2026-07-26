@@ -301,3 +301,197 @@ git --version
 ```
 
 If all commands execute successfully, the development environment is ready for building and running Maven projects.
+
+# 📄 Understanding `pom.xml`
+
+The **Project Object Model (POM)** is the central configuration file of every Maven project.
+
+The `pom.xml` file contains all the information required to build and manage the project, including project details, dependencies, plugins, and build configurations.
+
+Typical information stored in the POM includes:
+
+- Project Name
+- Group ID
+- Artifact ID
+- Version
+- Packaging Type
+- Dependencies
+- Build Plugins
+- Project Properties
+
+Example:
+
+```xml
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>maven-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+</project>
+```
+
+---
+
+# 📦 Dependency Management
+
+One of Maven's key features is **automatic dependency management**.
+
+Instead of manually downloading external libraries, dependencies are declared in the `pom.xml` file. Maven automatically downloads them from the configured repositories.
+
+Example:
+
+```xml
+<dependencies>
+
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.10.0</version>
+        <scope>test</scope>
+    </dependency>
+
+</dependencies>
+```
+
+Benefits include:
+
+- Automatic dependency downloads
+- Version management
+- Reduced manual work
+- Easier project maintenance
+
+---
+
+# 🔌 Maven Plugins
+
+Plugins extend Maven's functionality and automate common development tasks.
+
+Some commonly used plugins include:
+
+| Plugin | Purpose |
+|---------|---------|
+| Maven Compiler Plugin | Compiles Java source code |
+| Maven Surefire Plugin | Executes unit tests |
+| Maven JAR Plugin | Creates executable JAR files |
+| Maven Clean Plugin | Removes previous build files |
+
+Plugins are configured within the `pom.xml` file.
+
+---
+
+# 🔄 Maven Build Lifecycle
+
+Maven organizes the build process into a sequence of lifecycle phases.
+
+The default lifecycle consists of:
+
+| Phase | Description |
+|--------|-------------|
+| Validate | Checks project structure and configuration |
+| Compile | Compiles source code |
+| Test | Executes unit tests |
+| Package | Creates a distributable package (JAR) |
+| Verify | Performs additional quality checks |
+| Install | Installs the package into the local repository |
+| Deploy | Publishes the package to a remote repository |
+
+Each phase automatically executes all previous phases.
+
+Example:
+
+Running
+
+```bash
+mvn package
+```
+
+will execute:
+
+- Validate
+- Compile
+- Test
+- Package
+
+---
+
+# ⚙️ Common Maven Commands
+
+| Command | Description |
+|----------|-------------|
+| `mvn clean` | Deletes previously generated build files |
+| `mvn compile` | Compiles the project |
+| `mvn test` | Runs unit tests |
+| `mvn package` | Creates a JAR package |
+| `mvn install` | Installs the package into the local repository |
+| `mvn verify` | Performs project verification |
+| `mvn deploy` | Deploys the package to a remote repository |
+
+---
+
+# 📁 Maven Repository
+
+Maven stores downloaded libraries in the **Local Repository**.
+
+Default location:
+
+```text
+C:\Users\<username>\.m2\repository
+```
+
+If a dependency is not available locally, Maven downloads it automatically from a remote repository.
+
+---
+
+# 🌐 Maven Central Repository
+
+The **Maven Central Repository** is the default online repository used by Maven.
+
+It contains thousands of open-source Java libraries and plugins that can be added to projects simply by declaring them in the `pom.xml` file.
+
+---
+
+# 🧪 Unit Testing
+
+Unit testing ensures that individual components of the application function correctly.
+
+This project uses **JUnit 5** for testing.
+
+Run tests using:
+
+```bash
+mvn test
+```
+
+Successful execution confirms that the implemented test cases have passed.
+
+---
+
+# 💡 Advantages of Maven
+
+- Standardized project structure
+- Automated dependency management
+- Build automation
+- Simplified project maintenance
+- Easy integration with IDEs
+- Supports Continuous Integration (CI)
+- Plugin-based architecture
+- Improved project portability
+
+---
+
+# 📚 Key Concepts Learned
+
+Through this laboratory exercise, the following concepts were explored:
+
+- Apache Maven
+- Maven Project Structure
+- Project Object Model (POM)
+- Dependency Management
+- Maven Plugins
+- Maven Lifecycle
+- Build Automation
+- Unit Testing
+- Packaging Java Applications
+- Repository Management
